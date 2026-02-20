@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, Sparkles, Heart, TrendingUp, Shield } from "lucide-react";
+import eiraImage from "@/public/eira.png";
 import Pill from "@/components/Pill";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
@@ -89,7 +89,7 @@ export default function Home() {
                 
                 <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 rounded-full bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500 shadow-[0_40px_120px_rgba(0,0,0,0.55)] flex items-center justify-center animate-float-slow">
                   <img
-                    src="/eira.png"
+                    src={eiraImage.src}
                     alt="EIRA Logo"
                     className="h-40 w-40 sm:h-48 sm:w-48 rounded-full object-cover ring-4 ring-primary-900/60 shadow-inner"
                   />
