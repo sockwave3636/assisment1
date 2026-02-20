@@ -93,6 +93,7 @@ export default function Home() {
                     alt="this is testing for image"
                     width={192}
                     height={192}
+                    priority
                     className="h-40 w-40 sm:h-48 sm:w-48 rounded-full object-cover ring-4 ring-primary-900/60 shadow-inner"
                   />
                 </div>
