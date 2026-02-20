@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 rounded-full bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500 shadow-[0_40px_120px_rgba(0,0,0,0.55)] flex items-center justify-center animate-float-slow">
                   <Image
                     src="/eira.png"
-                    alt="this is testing"
+                    alt="this is testing for image"
                     width={192}
                     height={192}
                     className="h-40 w-40 sm:h-48 sm:w-48 rounded-full object-cover ring-4 ring-primary-900/60 shadow-inner"
