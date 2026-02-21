@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import eiraLogo from "@/app/assets/eira.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary-700">EIRA</span>
+       
+              <Image
+                src={eiraLogo}
+                alt="EIRA"
+                width={120}
+                height={40}
+                className="h-8 sm:h-10 w-auto object-contain"
+              />
+          
           </Link>
 
           {/* Desktop Navigation */}

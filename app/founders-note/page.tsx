@@ -12,9 +12,9 @@ export default function FoundersNote() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
               <Quote className="w-8 h-8 text-accent-300" />
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
                 A Personal Note from the Founder
               </h1>
             </div>

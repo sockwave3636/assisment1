@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import eiraLogo from "@/app/assets/eira.png";
 
 export default function Footer() {
   return (
@@ -7,7 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold text-primary-700">EIRA</span>
+              <Image
+                src={eiraLogo}
+                alt="EIRA"
+                width={120}
+                height={40}
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </Link>
             <p className="text-gray-600 text-sm max-w-md">
               Ancient Wisdom. Modern Science. Personalised Wellness. Customised

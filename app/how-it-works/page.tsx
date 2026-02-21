@@ -59,7 +59,7 @@ export default function HowItWorks() {
       <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
               Healing Journey
             </h1>
             <p className="text-xl md:text-2xl text-gray-600">
@@ -82,7 +82,7 @@ export default function HowItWorks() {
               >
                 <div className="flex-1">
                   <div className="relative">
-                    <div className="absolute -top-4 -left-4 text-7xl font-bold text-primary-100 z-0">
+                    <div className="absolute top-4 right-4 text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-100 z-10">
                       {step.number}
                     </div>
                     <div className="relative z-10 bg-white p-8 rounded-2xl border border-gray-100 shadow-lg">
@@ -90,7 +90,7 @@ export default function HowItWorks() {
                         <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
                           <step.icon className="w-6 h-6 text-primary-600" />
                         </div>
-                        <h2 className="text-3xl font-bold text-gray-900">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                           {step.title}
                         </h2>
                       </div>
@@ -117,8 +117,8 @@ export default function HowItWorks() {
                   </div>
                 </div>
                 <div className="flex-1 flex justify-center">
-                  <div className="w-full max-w-md h-64 bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl flex items-center justify-center border border-gray-100">
-                    <step.icon className="w-24 h-24 text-primary-300 opacity-50" />
+                  <div className="w-full min-h-48 sm:min-h-64 max-w-md aspect-square sm:aspect-auto sm:h-64 bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl flex items-center justify-center border border-gray-100 p-4">
+                    <step.icon className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 text-primary-300 opacity-50" />
                   </div>
                 </div>
               </div>

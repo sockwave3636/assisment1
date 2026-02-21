@@ -23,7 +23,7 @@ export default function Home() {
               <Pill className="bg-white text-accent-200 ring-primary-600/60">
                 Ayurveda, Designed for Today
               </Pill>
-              <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
                 Overall Wellness through Ayurveda{" "}
                 <span className="block text-accent-200">
                   is your path to balance
@@ -55,8 +55,8 @@ export default function Home() {
                 </SecondaryButton>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-primary-600/50 bg-primary-800/40 p-4 shadow-lg shadow-primary-900/40 backdrop-blur-sm sm:grid-cols-3">
-                <div>
+              <div className="mt-10 grid grid-cols-2 gap-0 rounded-2xl border border-primary-600/50 bg-primary-800/40 p-4 shadow-lg shadow-primary-900/40 backdrop-blur-sm sm:grid-cols-3">
+                <div className="border-r border-b border-primary-600/50 pr-4 pb-4 sm:pb-0 sm:border-b-0 sm:pr-4">
                   <div className="text-sm font-semibold text-white">
                     Personalised
                   </div>
@@ -64,7 +64,7 @@ export default function Home() {
                     Protocols built for your dosha & habits
                   </div>
                 </div>
-                <div>
+                <div className="border-l border-b border-primary-600/50 pl-4 pb-4 sm:pb-0 sm:border-b-0 sm:border-r sm:pr-4">
                   <div className="text-sm font-semibold text-white">
                     Structured
                   </div>
@@ -72,7 +72,7 @@ export default function Home() {
                     Assessment → program → outcomes
                   </div>
                 </div>
-                <div className="col-span-2 sm:col-span-1">
+                <div className="col-span-2 pt-4 pl-4 sm:col-span-1 sm:pt-0 sm:pl-4 sm:border-l sm:border-t-0 border-t border-primary-600/50">
                   <div className="text-sm font-semibold text-white">
                     Adaptive
                   </div>
@@ -85,7 +85,7 @@ export default function Home() {
 
             
             <div className="md:col-span-5">
-              <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center mb-4">
                 
                 <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 rounded-full bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500 shadow-[0_40px_120px_rgba(0,0,0,0.55)] flex items-center justify-center animate-float-slow">
                   <img
@@ -96,11 +96,11 @@ export default function Home() {
                 </div>
 
                 
-                <div className="absolute -left-6 top-6 rounded-2xl bg-primary-800/80 px-4 py-3 text-xs text-primary-50 ring-1 ring-primary-500/70 backdrop-blur-md animate-float">
+                <div className="absolute left-0 sm:-left-6 top-4 max-w-[calc(100%+1rem)] rounded-2xl bg-primary-800/80 px-3 py-2 sm:px-4 sm:py-3 text-xs text-primary-50 ring-1 ring-primary-500/70 backdrop-blur-md animate-float">
                   Samskara-inspired, chemical-free care rooted in Ayurveda.
                 </div>
 
-                <div className="absolute -bottom-6 right-0 flex items-center gap-3 rounded-2xl bg-primary-800/90 px-4 py-2 text-xs text-primary-50 ring-1 ring-primary-600/70 backdrop-blur-md">
+                {/* <div className="absolute -bottom-4 sm:-bottom-6 right-0 left-0 sm:left-auto flex items-center justify-center sm:justify-end gap-3 rounded-2xl bg-primary-800/90 px-3 py-2 sm:px-4 text-xs text-primary-50 ring-1 ring-primary-600/70 backdrop-blur-md">
                   <div className="flex -space-x-2">
                     <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-accent-400 text-[10px] font-semibold text-primary-900">
                       A
@@ -113,7 +113,7 @@ export default function Home() {
                     </span>
                   </div>
                   <span>Regular EIRA guests</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -124,15 +124,15 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Your Healing Journey
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto px-2 sm:px-0">
               A structured, personalised path from assessment to transformation
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {[
               {
                 number: "01",
@@ -192,7 +192,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="py-16 sm:py-20">
             <div className="flex flex-col gap-3">
-              <h2 className="text-3xl font-semibold tracking-tight text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900">
                 Why Choose EIRA?
               </h2>
               <p className="max-w-2xl text-pretty text-gray-600">
@@ -250,7 +250,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 md:p-12 rounded-2xl border border-primary-100">
-            <div className="flex items-start space-x-4">
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:space-x-4 sm:gap-0">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                   P
@@ -278,7 +278,7 @@ export default function Home() {
           <div className="py-16 sm:py-20">
             <div className="grid gap-10 rounded-3xl border border-primary-200 bg-gradient-to-br from-primary-50 via-white to-accent-50 p-8 shadow-lg md:grid-cols-12 md:p-10">
               <div className="md:col-span-7">
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900">
+                <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900">
                   Take Control of Your Wellness
                 </h2>
                 <p className="mt-3 max-w-2xl text-pretty text-gray-600">

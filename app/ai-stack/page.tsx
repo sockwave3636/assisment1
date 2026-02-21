@@ -51,7 +51,7 @@ export default function AIStack() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
               The EIRA Intelligence Platform
             </h1>
             <p className="text-xl md:text-2xl text-primary-100/90 max-w-3xl mx-auto leading-relaxed">
@@ -70,7 +70,7 @@ export default function AIStack() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Core Intelligence Layers
             </h2>
           </div>
@@ -111,7 +111,7 @@ export default function AIStack() {
 
       <section className="py-20 bg-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Experience Intelligent Ayurveda
           </h2>
           <p className="text-xl mb-10 text-primary-100">

@@ -10,7 +10,7 @@ export default function Download() {
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-8 backdrop-blur-sm">
               <Smartphone className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               Take Control of Your Wellness
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-primary-100">
@@ -72,7 +72,7 @@ export default function Download() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Everything You Need in One App
             </h2>
             <p className="text-xl text-gray-600">
@@ -114,7 +114,7 @@ export default function Download() {
 
       <section className="py-20 bg-primary-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Start Your Journey?
           </h2>
           <p className="text-xl mb-10 text-primary-100">

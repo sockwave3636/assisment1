@@ -48,7 +48,7 @@ export default function Packages() {
       <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
               Wellness Packages
             </h1>
             <p className="text-xl text-gray-600">

@@ -37,7 +37,7 @@ export default function Advisory() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-800/60 rounded-full mb-6">
               <Award className="w-8 h-8 text-accent-300" />
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
               Medical & Wellness Advisory
             </h1>
             <p className="text-xl md:text-2xl text-primary-100/90 max-w-3xl mx-auto leading-relaxed">
