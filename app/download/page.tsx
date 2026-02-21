@@ -26,44 +26,34 @@ export default function Download() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Link
               href="/download"
-              className="group bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="flex flex-col items-center text-center min-h-[44px] p-8 rounded-xl border-2 border-gray-200 bg-white hover:border-primary-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              aria-label="Download EIRA on the App Store"
             >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <DownloadIcon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Download on the App Store
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Available for iOS devices
-                </p>
-                <div className="flex items-center text-primary-600 font-semibold group-hover:text-primary-700">
-                  Get the app
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </div>
+              <div className="w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-6" aria-hidden="true">
+                <DownloadIcon className="w-7 h-7 text-white" aria-hidden="true" />
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ lineHeight: 1.25 }}>Download on the App Store</h3>
+              <p className="text-gray-600 mb-4 leading-relaxed" style={{ lineHeight: 1.5 }}>Available for iOS devices</p>
+              <span className="flex items-center text-primary-600 font-semibold">
+                Get the app
+                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+              </span>
             </Link>
 
             <Link
               href="/download"
-              className="group bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="flex flex-col items-center text-center min-h-[44px] p-8 rounded-xl border-2 border-gray-200 bg-white hover:border-primary-300 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              aria-label="Get EIRA on Google Play"
             >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <DownloadIcon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Get it on Google Play
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Available for Android devices
-                </p>
-                <div className="flex items-center text-primary-600 font-semibold group-hover:text-primary-700">
-                  Get the app
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </div>
+              <div className="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6" aria-hidden="true">
+                <DownloadIcon className="w-7 h-7 text-white" aria-hidden="true" />
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ lineHeight: 1.25 }}>Get it on Google Play</h3>
+              <p className="text-gray-600 mb-4 leading-relaxed" style={{ lineHeight: 1.5 }}>Available for Android devices</p>
+              <span className="flex items-center text-primary-600 font-semibold">
+                Get the app
+                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+              </span>
             </Link>
           </div>
         </div>
@@ -124,13 +114,13 @@ export default function Download() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/download"
-              className="bg-white text-primary-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-medium text-lg shadow-lg"
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-white text-primary-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-md transition-colors hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Download on the App Store
             </Link>
             <Link
               href="/download"
-              className="bg-white text-primary-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-medium text-lg shadow-lg"
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-white text-primary-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-md transition-colors hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Get it on Google Play
             </Link>

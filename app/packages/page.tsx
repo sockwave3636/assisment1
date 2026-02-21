@@ -64,25 +64,18 @@ export default function Packages() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
-              <div
-                key={index}
-                className={`bg-gradient-to-br ${pkg.color} border-2 ${pkg.borderColor} rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2`}
-              >
-                <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6 shadow-md">
-                  <pkg.icon className="w-8 h-8 text-primary-600" />
+              <div key={index} className={`bg-gradient-to-br ${pkg.color} border ${pkg.borderColor} rounded-xl p-8`}>
+                <div className="flex items-center justify-center w-14 h-14 bg-white rounded-xl mb-6" aria-hidden="true">
+                  <pkg.icon className="w-7 h-7 text-primary-600" aria-hidden="true" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {pkg.title}
-                </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  {pkg.description}
-                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ lineHeight: 1.25 }}>{pkg.title}</h3>
+                <p className="text-gray-700 mb-6 leading-relaxed" style={{ lineHeight: 1.5 }}>{pkg.description}</p>
                 <Link
                   href="/packages"
-                  className="inline-flex items-center text-primary-700 hover:text-primary-800 font-semibold group"
+                  className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] text-primary-700 hover:text-primary-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded-lg"
                 >
                   Learn More
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
                 </Link>
               </div>
             ))}
@@ -109,7 +102,7 @@ export default function Packages() {
           </p>
           <Link
             href="/packages"
-            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 font-medium text-lg shadow-lg"
+            className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-white text-primary-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-md transition-colors hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             Book Consultation
           </Link>
