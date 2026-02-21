@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Sparkles, Heart, TrendingUp, Shield } from "lucide-react";
-import eiraImage from "./assets/eira.png";
+import eiraImage from "./assets/eira1.png";
 import Pill from "@/components/Pill";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
