@@ -71,7 +71,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/packages"
-              className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors font-medium"
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold transition-colors hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >
               Book Consultation
             </Link>
@@ -79,69 +79,70 @@ export default function Navbar() {
 
           
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            className="md:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
 
        
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-3">
+          <div className="md:hidden pb-4 space-y-1" role="navigation" aria-label="Mobile menu">
             <Link
               href="/"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/packages"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Packages
             </Link>
             <Link
               href="/how-it-works"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </Link>
             <Link
               href="/ai-stack"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               AI Stack
             </Link>
             <Link
               href="/founders-note"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Founder's Note
             </Link>
             <Link
               href="/advisory"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Advisory
             </Link>
             <Link
               href="/download"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+              className="block min-h-[44px] py-3 px-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Download
             </Link>
             <Link
               href="/packages"
-              className="block bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors text-center font-medium mt-4"
+              className="block min-h-[44px] py-3 px-6 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-colors text-center font-semibold mt-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               onClick={() => setIsOpen(false)}
             >
               Book Consultation

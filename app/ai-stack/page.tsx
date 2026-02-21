@@ -43,12 +43,7 @@ export default function AIStack() {
 
   return (
     <div className="pt-16">
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary-900 via-primary-900 to-primary-950 text-white">
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-primary-700/30 blur-3xl animate-float-slow" />
-          <div className="absolute -bottom-40 right-[-80px] h-[520px] w-[520px] rounded-full bg-accent-500/20 blur-3xl animate-float" />
-        </div>
-
+      <section className="bg-primary-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
@@ -77,12 +72,9 @@ export default function AIStack() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {intelligenceLayers.map((layer, index) => (
-              <div
-                key={index}
-                className="group relative bg-gradient-to-br from-white to-primary-50/30 p-8 rounded-2xl border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-100 text-primary-700 mb-6 group-hover:bg-primary-200 transition-colors">
-                  <layer.icon className="w-7 h-7" />
+              <div key={index} className="bg-white p-8 rounded-xl border border-gray-200">
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-700 mb-6" aria-hidden="true">
+                  <layer.icon className="w-7 h-7" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {layer.title}
@@ -120,13 +112,13 @@ export default function AIStack() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/packages"
-              className="bg-accent-400 text-primary-900 px-8 py-4 rounded-full hover:bg-accent-300 transition-all transform hover:scale-105 font-medium text-lg shadow-lg"
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-accent-400 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-md transition-colors hover:bg-accent-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-400"
             >
               Explore Packages
             </Link>
             <Link
               href="/how-it-works"
-              className="bg-white/10 text-white px-8 py-4 rounded-full border-2 border-white hover:bg-white/20 transition-all transform hover:scale-105 font-medium text-lg"
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-white/10 text-white px-8 py-4 rounded-xl border-2 border-white font-semibold text-lg transition-colors hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Learn How It Works
             </Link>

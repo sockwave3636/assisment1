@@ -3,16 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-noto-sans: 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --line-height-body: 1.5;
+  --line-height-heading: 1.25;
 }
 
 @layer base {
   body {
     @apply bg-white text-gray-900 antialiased;
+    font-feature-settings: "kern" 1;
+    line-height: var(--line-height-body);
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold;
+    line-height: var(--line-height-heading);
+  }
+
+  /* High-contrast focus indicators for accessibility (3:1 minimum) */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-600;
+  }
+
+  /* Ensure links are distinguishable - underline only for links */
+  a {
+    @apply no-underline;
   }
 }
 

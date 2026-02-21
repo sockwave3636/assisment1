@@ -26,11 +26,11 @@ export default function Footer() {
 
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               <li>
                 <Link
                   href="/packages"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
+                  className="inline-block min-h-[44px] py-2 text-gray-600 hover:text-primary-600 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded"
                 >
                   Packages
                 </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/how-it-works"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
+                  className="inline-block min-h-[44px] py-2 text-gray-600 hover:text-primary-600 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded"
                 >
                   How It Works
                 </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/download"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
+                  className="inline-block min-h-[44px] py-2 text-gray-600 hover:text-primary-600 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded"
                 >
                   Download App
                 </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/packages"
-                  className="text-primary-600 hover:text-primary-700 font-medium"
+                  className="inline-block min-h-[44px] py-2 text-primary-600 hover:text-primary-700 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded"
                 >
                   View Packages →
                 </Link>

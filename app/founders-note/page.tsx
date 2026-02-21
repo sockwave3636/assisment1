@@ -4,12 +4,7 @@ import { Quote } from "lucide-react";
 export default function FoundersNote() {
   return (
     <div className="pt-16">
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary-900 via-primary-900 to-primary-950 text-white">
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-primary-700/30 blur-3xl animate-float-slow" />
-          <div className="absolute -bottom-40 right-[-80px] h-[520px] w-[520px] rounded-full bg-accent-500/20 blur-3xl animate-float" />
-        </div>
-
+      <section className="bg-primary-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
@@ -87,13 +82,13 @@ export default function FoundersNote() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/packages"
-                className="bg-primary-600 text-white px-8 py-4 rounded-full hover:bg-primary-700 transition-all transform hover:scale-105 font-medium text-lg shadow-lg"
+                className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-md transition-colors hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               >
                 Explore Packages
               </Link>
               <Link
                 href="/how-it-works"
-                className="bg-white text-primary-600 px-8 py-4 rounded-full border-2 border-primary-600 hover:bg-primary-50 transition-all transform hover:scale-105 font-medium text-lg"
+                className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] bg-white text-primary-600 px-8 py-4 rounded-xl border-2 border-primary-600 font-semibold text-lg transition-colors hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               >
                 Learn How It Works
               </Link>

@@ -45,26 +45,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
-        "float-slow": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-6px)" },
-        },
-        "pulse-soft": {
-          "0%, 100%": { opacity: "1", transform: "scale(1)" },
-          "50%": { opacity: "0.9", transform: "scale(1.03)" },
-        },
-      },
-      animation: {
-        float: "float 8s ease-in-out infinite",
-        "float-slow": "float-slow 12s ease-in-out infinite",
-        "pulse-soft": "pulse-soft 4s ease-in-out infinite",
+        sans: ["var(--font-noto-sans)", "system-ui", "sans-serif"],
       },
     },
   },
